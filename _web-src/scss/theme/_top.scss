@@ -1,0 +1,58 @@
+// Block: container-top
+
+.container-top {
+  display: block;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 7rem;
+  }
+
+  // Element: container-top-image
+
+  &-image {
+    width: 110px;
+    height: 110px;
+    transition: all .3s;
+    position: relative;
+
+    &:hover {
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  // Element: container-top-name
+
+  &-name {
+    @extend .theme-font;
+    font-size: 2.5rem;
+    padding-top: $spacer / 2;
+    color: darken($body-color, 50%);
+
+    @include media-breakpoint-up(lg) {
+      padding-top: $spacer;
+      font-size: 4rem;
+    }
+  }
+
+  // Element: container-top-headline
+
+  &-headline {
+    @extend .theme-font;
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: darken($body-color, 70%);
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
+  }
+}
