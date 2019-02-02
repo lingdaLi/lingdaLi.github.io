@@ -3,9 +3,7 @@
 title: Clean portfolio theme for Jekyll powered by Bootstrap 4.
 email: your-email@domain.com
 brand: Lingda Li
-headline: | 
-  你走后我遇到过很多个雨天
-  却再也未曾有过勇气冒雨见你一面
+headline: Failure is an option, but fear is not
 description: > # this means to ignore newlines until "baseurl:"
   New Site
 baseurl: "" # the subpath of your site, e.g. /blog
